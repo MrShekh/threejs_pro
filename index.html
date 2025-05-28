@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+</head>
+<body>
+  <div class="main w-full h-full">
+    <nav class="fixed top-0 left-0 w-full bg-black/50 backdrop-blur-sm z-50">
+      <div class="container mx-auto px-10 py-5 flex justify-between items-center">
+        <img src="./public/CP.png" alt="Logo" class="h-20 w-auto">
+        <div class="flex gap-8">
+          <a href="#" class="text-white hover:text-blue-400 hover:drop-shadow-[0_0_8px_rgba(96,165,250,0.8)] transition-all duration-300">About</a>
+          <a href="#" class="text-white hover:text-blue-400 hover:drop-shadow-[0_0_8px_rgba(96,165,250,0.8)] transition-all duration-300">Community</a>
+          <a href="#" class="text-white hover:text-blue-400 hover:drop-shadow-[0_0_8px_rgba(96,165,250,0.8)] transition-all duration-300">Services</a>
+          <a href="#" class="text-white hover:text-blue-400 hover:drop-shadow-[0_0_8px_rgba(96,165,250,0.8)] transition-all duration-300">Account</a>
+        </div>
+      </div>
+    </nav>
+    <div class="w-full h-screen overflow-hidden">
+      <img class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 drop-shadow-[0_0_25px_rgba(255,255,255,0.7)] " src="./public/CP.png" alt="" class="w-full h-full object-cover">
+      <canvas id="canvas"></canvas>
+    </div>
+    <div class="w-full h-screen bg-zinc-800"></div>
+  </div>
+
+  <script type="module" src="./main.js"></script>
+</body>
+</html>
